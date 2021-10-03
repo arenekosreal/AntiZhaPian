@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/homeback"
+    tools:context=".ui.mine.MineFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/home_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:contentDescription="image"
+                app:srcCompat="@drawable/mine"
+                tools:ignore="MissingConstraints" />
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/phone_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="35dp"
+                    android:fontFamily="@font/phone_font"
+                    android:text="您好, 152******79"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/more_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="75dp"
+                    android:text="点击查看个人信息 >"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/mine_setting"
+                    android:layout_width="71dp"
+                    android:layout_height="71dp"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:layout_marginStart="27dp"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/ic_head_img" />
+
+            </GridLayout>
+
+        </FrameLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

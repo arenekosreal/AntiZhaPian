@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="402dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                tools:ignore="MissingConstraints">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/set_name_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="名字：" />
+
+                    <EditText
+                        android:id="@+id/set_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="填名字即可，例如：张三可填“三”"
+                        android:inputType="textPersonName"
+                        android:maxLength="2"
+                        android:textColorHint="#C1C1C1"
+                        android:textSize="12sp" />
+
+                    <ImageButton
+                        android:id="@+id/set_load_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/ic_baseline_loop" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/set_id_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="证件号：" />
+
+                    <EditText
+                        android:id="@+id/set_id"
+                        android:layout_width="237dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="填入首末数字即可（例如：32，5X）"
+                        android:maxLength="2"
+                        android:textColorHint="#C1C1C1"
+                        android:textSize="12sp" />
+
+                    <ImageButton
+                        android:id="@+id/set_load_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/ic_baseline_loop" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/set_region_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="地区：" />
+
+                    <EditText
+                        android:id="@+id/set_region"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="例如：陕西省.渭南市.富平县（用点隔开）"
+                        android:inputType="textPersonName"
+                        android:maxLength="20"
+                        android:textColorHint="#C1C1C1"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/set_address_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="详细地址：" />
+
+                    <EditText
+                        android:id="@+id/set_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="例如：龙岗中心城福宁路113号"
+                        android:inputType="textPersonName"
+                        android:maxLength="20"
+                        android:textColorHint="#C1C1C1"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/set_work_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="行业：" />
+
+                    <EditText
+                        android:id="@+id/set_work"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="例如：国家主席"
+                        android:inputType="textPersonName"
+                        android:maxLength="16"
+                        android:textColorHint="#C1C1C1"
+                        android:textSize="12sp" />
+
+                    <ImageButton
+                        android:id="@+id/set_load_work"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/ic_baseline_loop" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp">
+
+                    <TextView
+                        android:id="@+id/set_emergency_name_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="紧急联系人姓名：" />
+
+                    <EditText
+                        android:id="@+id/set_emergency_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="例如：李四"
+                        android:inputType="textPersonName"
+                        android:maxLength="16"
+                        android:textColorHint="#C1C1C1"
+                        android:textSize="12sp" />
+
+                    <ImageButton
+                        android:id="@+id/set_emergency_name_work"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/ic_baseline_loop" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/set_emergency_phone_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="紧急联系人电话：" />
+
+                    <EditText
+                        android:id="@+id/set_emergency_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="例如：13245678919"
+                        android:inputType="textPersonName"
+                        android:maxLength="16"
+                        android:textColorHint="#C1C1C1"
+                        android:textSize="12sp" />
+
+                    <ImageButton
+                        android:id="@+id/set_emergency_phone_work"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/ic_baseline_loop" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/set_qq_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="QQ：" />
+
+                    <EditText
+                        android:id="@+id/set_qq"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="例如：123456789"
+                        android:inputType="textPersonName"
+                        android:maxLength="16"
+                        android:textColorHint="#C1C1C1"
+                        android:textSize="12sp" />
+
+                    <ImageButton
+                        android:id="@+id/set_qq_work"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/ic_baseline_loop" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/set_wechat_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="微信：" />
+
+                    <EditText
+                        android:id="@+id/set_wechat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="例如：test_000"
+                        android:inputType="textPersonName"
+                        android:maxLength="16"
+                        android:textColorHint="#C1C1C1"
+                        android:textSize="12sp" />
+
+                    <ImageButton
+                        android:id="@+id/set_wechat_work"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/ic_baseline_loop" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/set_mail_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="邮箱：" />
+
+                    <EditText
+                        android:id="@+id/set_mail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="例如：test@host.com"
+                        android:inputType="textPersonName"
+                        android:maxLength="16"
+                        android:textColorHint="#C1C1C1"
+                        android:textSize="12sp" />
+
+                    <ImageButton
+                        android:id="@+id/set_mail_work"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/ic_baseline_loop" />
+                </TableRow>
+            </TableLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/set_commit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="提交" />
+
+                <Button
+                    android:id="@+id/set_clear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="清空" />
+
+                <Button
+                    android:id="@+id/set_reset"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="恢复默认配置" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/version"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:text="版本：" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="原版地址：" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autoLink="web"
+                    android:gravity="center"
+                    android:text="https://github.com/XJP-GIT/AntiZhaPian" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="改版地址：" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autoLink="web"
+                    android:gravity="center"
+                    android:text="https://github.com/zhanghua000/AntiZhaPian" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
