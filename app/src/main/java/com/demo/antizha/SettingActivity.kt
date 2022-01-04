@@ -13,12 +13,12 @@ class SettingActivity : AppCompatActivity() {
     lateinit var settings: SharedPreferences
     lateinit var editor: SharedPreferences.Editor
 
-    @SuppressLint("CommitPrefEdits")
+    @SuppressLint("CommitPrefEdits", "SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val settingBinding = MineSettingInfoBinding.inflate(layoutInflater)
         setContentView(settingBinding.root)
-        var versionName=this.packageManager.getPackageInfo(this.packageName,PackageManager.GET_ACTIVITIES).versionName
+        val versionName=this.packageManager.getPackageInfo(this.packageName,PackageManager.GET_ACTIVITIES).versionName
         settingBinding.version.text="${settingBinding.version.text}${versionName}"
         settingBinding.setCommit.setOnClickListener {
             when {
@@ -62,7 +62,7 @@ class SettingActivity : AppCompatActivity() {
                     Toast.makeText(this@SettingActivity, "微信不能为空", Toast.LENGTH_SHORT).show()
                     return@setOnClickListener
                 }
-                settingBinding.setMail.text.toString().matches("^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\\.[a-zA-Z0-9_-]+)+\$".toRegex()) -> {
+                settingBinding.setMail.text.toString().matches("^(\\w+((-\\w+)|(\\.\\w+))*)\\+\\w+((-\\w+)|(\\.\\w+))*@[A-Za-z0-9]+(([.\\-])[A-Za-z0-9]+)*\\.[A-Za-z0-9]+\$".toRegex()) -> {
                     Toast.makeText(this@SettingActivity, "邮箱格式不对", Toast.LENGTH_SHORT).show()
                     return@setOnClickListener
                 }
