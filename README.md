@@ -1,4 +1,7 @@
 # AntiZhaPian
+**Deprecated**  
+I don't have time to maintain this anymore. You can use https://github.com/newhying/AntiZhaPian instead and I think it works better than mine.  
+
 fork from https://github.com/XJP-GIT/AntiZhaPian , upgrade to add more customizeable info
 
 # Useage
